@@ -1,27 +1,59 @@
 .debug{
     border: 1px solid black;
-   }
+}
    
-   header{
-       height: 70px;
-   }
-   
-   .wrapper{
-       height: calc(100vh - 70px);
-       margin-top: 70px;
-       overflow: hidden;
-   }
-   
-   #sidebar{
-       height: 100%;
-       width: 180px;
-       flex-shrink: 0;
-       background-color: #051e34;
-       background-image: url("../img/sidebar-bg.png");
-   }
-   
-   main{
-       flex-grow: 1;
-       overflow-y: auto;
-       height: 100%;
-   }
+header{
+    height: 70px;
+}
+
+.ad-logo-mobile{
+    width: 50px;
+}
+
+.ad-logo{
+    width: 120px;
+    margin: 0.6em;
+}
+
+header .ad-list{
+    width: 180px;
+}
+
+header .ad-list ul{
+    list-style: none;
+}
+
+header .ad-list ul a{
+    text-decoration: none;
+}
+
+.wrapper{
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+#sidebar{
+    height: 100%;
+    width: 180px;
+    flex-shrink: 0;
+    background-color: #051e34;
+    background-image: url("../img/sidebar-bg.png");
+}
+
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100%;
+}
+
+
+@media screen and (min-width:1200px){
+    .ad-d-block{
+        display: block;
+    }
+
+    .ad-d-none{
+        display: none;
+    }
+}
