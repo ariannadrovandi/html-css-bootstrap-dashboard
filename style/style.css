@@ -19,11 +19,11 @@ header .ad-list{
     width: 180px;
 }
 
-header .ad-list ul{
+ul{
     list-style: none;
 }
 
-header .ad-list ul a{
+a{
     text-decoration: none;
 }
 
@@ -40,6 +40,8 @@ header .ad-list ul a{
     background-color: #051e34;
     background-image: url("../img/sidebar-bg.png");
 }
+
+
 
 main{
     flex-grow: 1;
