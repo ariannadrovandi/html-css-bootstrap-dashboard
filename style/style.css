@@ -1,3 +1,7 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 .debug{
     border: 1px solid black;
 }
@@ -47,6 +51,17 @@ main{
     flex-grow: 1;
     overflow-y: auto;
     height: 100%;
+}
+
+.ad-badge-color{
+    background-color: #165bba;
+}
+
+.ad-square{
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 6px;
 }
 
 

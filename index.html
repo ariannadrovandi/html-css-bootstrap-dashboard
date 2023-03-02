@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
@@ -62,7 +65,44 @@
 
             <div class="aside bg-primary text-white">
                 <div class="container-fluid">
-                    divisa in tre colonne e badge  e dal + si apre un offcanvas con form
+                    <div class="row">
+                        <div class="col-12 col-sm-4 col-lg-6 text-white px-2">
+                           <ul class="ps-1">
+                                <li>
+                                    <ul class="ps-0 py-2 d-flex justify-content-start align-items-center">
+                                        <li class="p-2"><h1>Boolean</h1></li>
+                                        <li><span class="badge rounded-pill ad-badge-color p-2 m-2">Piano blaze</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="ps-1">
+                                        <li><span class="badge rounded-pill ad-badge-color p-2 m-2">Piano blaze</span></li>
+                                        <li><i class="fa-solid fa-angles-right text-white"></i></li>
+                                        <li><span class="badge rounded-pill ad-badge-color p-2 m-2">Piano blaze</span></li>
+                                        <li><span class="badge rounded-pill ad-badge-color p-2 m-2">Piano blaze</span></li>
+                                        <li><span class="badge rounded-pill ad-badge-color p-2 m-2">Piano blaze</span></li>
+                                        <li><span class="badge rounded-pill ad-badge-color p-2 m-2">Piano blaze</span></li>
+                                    </ul>
+                                </li>
+                           </ul>
+                        </div>
+
+                        <div class="col-12 col-sm-4 col-lg-4 text-white px-2">
+                            <ul class="ps-1">
+                                <li><p class="text-white pt-3 ">Studenti online negli ultimi 30 minuti</p></li>
+                                <li><p class="text-white fs-3">125</p></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-sm-4 col-lg-2 px-2">
+                            <ul class="d-flex justify-content-start align-items-baseline ps-1">
+                                <li><p class="text-white p-3 ps-0">Nuovo Studente</p></li>
+                                <li><a href="#">
+                                    <div class="ad-square p-3 d-flex justify-content-center align-items-center"><i class="text-white fa-solid fa-plus"></i></div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -72,9 +112,46 @@
                         <div class="row gy-4">
                             <div class="col-12">
                                 <div class="card">
-                                    <div class="card-header">
-                                      Featured
+                                    <div class="card-header fs-4">
+                                        Prossime Classi
                                     </div>
+                                    <div>
+                                        <table class="table table-hover text-center small">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col" class="d-none d-md-table-cell">#</th>
+                                                <th scope="col" class=" d-none d-sm-table-cell">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>@mdo</td>
+                                                <td class="d-none d-md-table-cell">Mark</td>
+                                                <td class=" d-none d-sm-table-cell">Otto</td>
+                                                <td>@mdo</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>@fat</td>
+                                                <td class="d-none d-md-table-cell">Jacob</td>
+                                                <td class=" d-none d-sm-table-cell">Thornton</td>
+                                                <td>@fat</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry the Bird</td>
+                                                <td class="d-none d-md-table-cell">@twitter</td>
+                                                <td class=" d-none d-sm-table-cell">@fat</td>
+                                                <td>@fat</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+
                                     tabella con over, con bottoni e badge
                                 </div>
                             </div>
@@ -98,7 +175,7 @@
                                     <div class="card-header">
                                       Featured
                                     </div>
-                                   ul con checkbox
+                                   card body con ul con checkbox con label
                                 </div>
                             </div>
 
