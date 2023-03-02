@@ -39,7 +39,7 @@ a{
 
 #sidebar{
     height: 100%;
-    width: 180px;
+    width: 70px;
     flex-shrink: 0;
     background-color: #051e34;
     background-image: url("../img/sidebar-bg.png");
@@ -64,6 +64,12 @@ main{
     border-radius: 6px;
 }
 
+@media screen and (min-width:992px){
+    #sidebar{
+        height: 100%;
+        width: 180px;
+    }
+}
 
 @media screen and (min-width:1200px){
     .ad-d-block{
