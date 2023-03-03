@@ -13,6 +13,97 @@
     <title>Dashboard</title>
 </head>
 <body class="bg-body-tertiary">
+
+    <div class="offcanvas  offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width:60vw;" >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci i tuoi dati</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="row g-3">
+              <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="input-group g-3 " >
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <div class="input-group">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                          <input type="email" class="form-control" aria-label="email"
+                                 aria-describedby="basic-addon1">
+                      </div>
+                  </div>
+                 <div class="mb-3 ms-5">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div> 
+                  </div>
+          <div class="input-group ">
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="email" class="form-control" aria-label="email"
+                             aria-describedby="basic-addon1">
+                  </div>
+              </div>
+         <div class="mb-3 ms-5">
+          <label for="exampleInputPassword1" class="form-label ms-3">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+          </div> 
+          </div>
+          <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Indirizzo</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Città</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Stato</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Scegli...</option>
+                  <option>Italia</option>
+                  <option>Francia</option>
+                  <option>Spagna</option>
+                  <option>USA</option>
+                  <option>Svizzera</option>
+                  <option>Russia</option>
+                  <option>Polonia</option>
+                  <option>Cina</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">CAP</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="mb-3">
+                  <label for="formFile" class="form-label">Default file input example</label>
+                  <input class="form-control" type="file" id="formFile">
+               <br>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Seleziona per proseguire
+                  </label>
+                </div>
+                </div>
+            </form>
+            <div class="d-grid d-md-block">
+              <button class="btn btn-primary btn-sm" type="button">Salva</button>
+              <button class="btn btn-warning btn-sm" type="button">Svuota</button>
+            </div>
+        </div>
+        </div>
+      </div>
+
     <header class=" fixed-top d-flex align-items-center">
         <nav class="d-flex justify-content-between align-items-center w-100 bg-white">
             <div class="ad-logo d-flex align-items-center justify-content-center">
@@ -97,9 +188,9 @@
                         <div class="col-12 col-md-4 col-lg-2 px-2">
                             <ul class="d-flex justify-content-start align-items-baseline ps-1">
                                 <li><p class="text-white p-3 ps-0">Nuovo Studente</p></li>
-                                <li><a href="#">
-                                    <div class="ad-square p-3 d-flex justify-content-center align-items-center"><i class="text-white fa-solid fa-plus"></i></div>
-                                </a></li>
+                                <li>
+                                    <button class="btn btn-primary ad-btn-border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="text-white fa-solid fa-plus"></i></button>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -276,7 +367,7 @@
                                             </button>
                                           </h2>
                                           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion.</div>
+                                            <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
                                           </div>
                                         </div>
                                         <div class="accordion-item">
@@ -286,7 +377,7 @@
                                             </button>
                                           </h2>
                                           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion.</div>
+                                            <div class="accordion-body">Clicca sull'icona della campanella.</div>
                                           </div>
                                         </div>
                                         <div class="accordion-item">
@@ -315,9 +406,9 @@
                                     </div>
                                    <div class="card-body">
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item"> <input type="checkbox"> Kickoff nuove classi</li>
-                                            <li class="list-group-item"> <input type="checkbox"> Lezione su Bootstrap 5 in classe #75</li>
-                                            <li class="list-group-item"> <input type="checkbox"> Controllare username github studenti</li>
+                                            <li class="list-group-item small"> <input type="checkbox"> Kickoff nuove classi</li>
+                                            <li class="list-group-item small"> <input type="checkbox"> Lezione su Bootstrap 5 in classe #75</li>
+                                            <li class="list-group-item small"> <input type="checkbox"> Controllare username github studenti</li>
                                         </ul>
                                    </div>
                                 </div>
@@ -334,9 +425,9 @@
                                             <p class="small">Lista degli ultimi utenti attivi in piattaforma nell'ultimo mese</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Gennaio: 1200</li>
-                                            <li class="list-group-item">Febbraio: 800</li>
-                                            <li class="list-group-item">Marzo: 1500</li>
+                                            <li class="list-group-item small">Gennaio: 1200</li>
+                                            <li class="list-group-item small">Febbraio: 800</li>
+                                            <li class="list-group-item small">Marzo: 1500</li>
                                         </ul>
                                         <div class="card-body">
                                             <a href="#" class="card-link">Visualizza report approfondito</a>
