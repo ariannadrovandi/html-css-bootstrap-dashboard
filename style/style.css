@@ -64,6 +64,20 @@ main{
     border-radius: 6px;
 }
 
+.ad-class{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.ad-btn-table{
+    height: 35px;
+    width: 35px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin: 5px;
+}
+
 @media screen and (min-width:992px){
     #sidebar{
         height: 100%;
